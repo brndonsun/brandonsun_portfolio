@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Brandon Sun | Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="nav-brand">BS</div>
+        <button class="nav-toggle" aria-label="Toggle navigation">
+            <span></span>
+            <span></span>
+            <span></span>
+        </button>
+        <ul class="nav-links">
+            <li><a href="#hero">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#projects">Work</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+
+    <section id="hero" class="hero">
+        <div class="hero-content">
+            <p class="hero-intro">Hello, I'm</p>
+            <h1 class="hero-title">Brandon Sun</h1>
+            <div class="hero-line"></div>
+            <p class="hero-tagline">CS Student at UC Irvine | Full-Stack Developer</p>
+            <a href="#projects" class="btn btn-primary">Explore My Work</a>
+        </div>
+        <div class="hero-decoration">
+            <div class="circle circle-1"></div>
+            <div class="circle circle-2"></div>
+            <div class="circle circle-3"></div>
+        </div>
+    </section>
+
+    <section id="about" class="about">
+        <div class="container">
+            <h2 class="section-title">About Me</h2>
+            <div class="about-content">
+                <div class="about-image">
+                    <div class="image-frame">
+                        <div class="image-placeholder">Your Photo</div>
+                    </div>
+                </div>
+                <div class="about-text">
+                    <p class="lead">I'm a Computer Science student at UC Irvine (GPA: 3.93) with a passion for building full-stack applications and exploring machine learning.</p>
+                    <p>Currently working as a Student Software Developer at UCI's Office of Information Technology, where I develop applications serving 120+ Graduate Programs using Java, Spring Boot, and React. I've also contributed to physics research, co-authoring a paper on particle classification using neural networks.</p>
+                    <p>When I'm not coding, I serve as Practice Director for UCI's Tennis Club, coordinating activities for 200+ members. I love combining my technical skills with creative problem-solving—my hackathon project LeTherapy won 1st Place at IrvineHacks 2025.</p>
+                    <div class="skills">
+                        <h3>What I Work With</h3>
+                        <div class="skill-tags">
+                            <span class="skill-tag">Python</span>
+                            <span class="skill-tag">Java</span>
+                            <span class="skill-tag">C++</span>
+                            <span class="skill-tag">JavaScript</span>
+                            <span class="skill-tag">React</span>
+                            <span class="skill-tag">Spring Boot</span>
+                            <span class="skill-tag">Flask</span>
+                            <span class="skill-tag">PyTorch</span>
+                            <span class="skill-tag">TensorFlow</span>
+                            <span class="skill-tag">SQL</span>
+                            <span class="skill-tag">Git</span>
+                            <span class="skill-tag">Jenkins</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="projects" class="projects">
+        <div class="container">
+            <h2 class="section-title">Selected Work</h2>
+            <p class="section-subtitle">A collection of projects I've crafted</p>
+
+            <div class="projects-list">
+                <article class="project-item">
+                    <div class="project-image-container">
+                        <div class="project-image">
+                            <!-- Replace with: <img src="images/letherapy.jpg" alt="LeTherapy"> -->
+                            <span>LeTherapy</span>
+                        </div>
+                        <div class="project-number">01</div>
+                    </div>
+                    <div class="project-details">
+                        <h3 class="project-title">LeTherapy</h3>
+                        <p class="project-description">
+                            Won 1st Place at IrvineHacks 2025 among 500+ participants. Built an AI-powered motivational chatbot with a custom multi-modal pipeline delivering real-time encouragement via text, voice, and video. Designed a responsive React interface with Vite and Tailwind CSS, handling 100+ user interactions.
+                        </p>
+                        <div class="project-meta">
+                            <div class="project-tags">
+                                <span>React</span>
+                                <span>Python</span>
+                                <span>Flask</span>
+                                <span>Tailwind CSS</span>
+                            </div>
+                            <span class="project-year">2025</span>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="project-item reverse">
+                    <div class="project-image-container">
+                        <div class="project-image">
+                            <!-- Replace with: <img src="images/tennis-analyzer.jpg" alt="Tennis Form Analyzer"> -->
+                            <span>Tennis Analyzer</span>
+                        </div>
+                        <div class="project-number">02</div>
+                    </div>
+                    <div class="project-details">
+                        <h3 class="project-title">Tennis Form Analyzer</h3>
+                        <p class="project-description">
+                            Built an AI-powered video analysis tool that tracks arm, leg, and racket movements during tennis swings. Implemented computer vision to pause at critical swing points and provide real-time form feedback. Added side-by-side comparison with professional player videos to highlight technique differences.
+                        </p>
+                        <div class="project-meta">
+                            <div class="project-tags">
+                                <span>Python</span>
+                                <span>OpenCV</span>
+                                <span>Flask</span>
+                            </div>
+                            <span class="project-year">2024</span>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="project-item">
+                    <div class="project-image-container">
+                        <div class="project-image">
+                            <!-- Replace with: <img src="images/earwormify.jpg" alt="Earwormify"> -->
+                            <span>Earwormify</span>
+                        </div>
+                        <div class="project-number">03</div>
+                    </div>
+                    <div class="project-details">
+                        <h3 class="project-title">Earwormify</h3>
+                        <p class="project-description">
+                            Built a Flask web app integrating the Spotify API to analyze and categorize 10,000+ songs by genre, key, and artist. Implemented OAuth 2.0 authentication for secure user data access and personalized music recommendations based on listening habits.
+                        </p>
+                        <div class="project-meta">
+                            <div class="project-tags">
+                                <span>Python</span>
+                                <span>Flask</span>
+                                <span>Spotify API</span>
+                                <span>OAuth 2.0</span>
+                            </div>
+                            <span class="project-year">2024</span>
+                        </div>
+                    </div>
+                </article>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact" class="contact">
+        <div class="container">
+            <div class="contact-header">
+                <h2 class="section-title">Let's Connect</h2>
+                <p class="section-subtitle">Have an idea or want to collaborate? I'd love to hear from you.</p>
+            </div>
+            <form class="contact-form" id="contactForm">
+                <div class="form-row">
+                    <div class="form-group">
+                        <label for="name">Name</label>
+                        <input type="text" id="name" name="name" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Email</label>
+                        <input type="email" id="email" name="email" required>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label for="message">Message</label>
+                    <textarea id="message" name="message" rows="5" required></textarea>
+                </div>
+                <button type="submit" class="btn btn-primary">Send Message</button>
+            </form>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-brand">Brandon Sun</div>
+                <div class="social-links">
+                    <a href="https://github.com/brandonsun" aria-label="GitHub" target="_blank">GitHub</a>
+                    <a href="https://linkedin.com/in/brandon-sun78" aria-label="LinkedIn" target="_blank">LinkedIn</a>
+                    <a href="mailto:brandonsunt@gmail.com" aria-label="Email">Email</a>
+                </div>
+            </div>
+            <p class="copyright">&copy; 2026 Brandon Sun. Crafted with care.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
