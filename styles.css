@@ -283,10 +283,12 @@ section {
 .about-image {
     position: sticky;
     top: 120px;
+    max-width: 350px;
 }
 
 .image-frame {
     position: relative;
+    overflow: hidden;
 }
 
 .image-frame::before {
@@ -296,14 +298,29 @@ section {
     left: -15px;
     right: 15px;
     bottom: 15px;
-    border: 2px solid var(--blue);
-    z-index: -1;
+    border: 3px solid var(--blue);
+    z-index: 1;
+    pointer-events: none;
+}
+
+.image-frame::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    box-shadow: inset 0 0 0 3px var(--accent);
+    z-index: 2;
+    pointer-events: none;
 }
 
 .image-frame img {
     width: 100%;
+    height: auto;
     aspect-ratio: 4/5;
     object-fit: cover;
+    object-position: top;
     display: block;
 }
 
