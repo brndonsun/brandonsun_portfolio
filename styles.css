@@ -275,37 +275,40 @@ section {
 
 .about-content {
     display: grid;
-    grid-template-columns: 350px 1fr;
-    gap: 5rem;
+    grid-template-columns: 200px 1fr;
+    gap: 4rem;
     align-items: start;
 }
 
 .about-image {
     position: sticky;
     top: 120px;
-    width: 200px;
+    width: 200px !important;
+    max-width: 200px !important;
 }
 
 .image-frame {
     position: relative;
-    width: 200px;
-    height: 200px;
-    border-radius: 50%;
-    overflow: hidden;
+    width: 200px !important;
+    height: 200px !important;
+    border-radius: 50% !important;
+    overflow: hidden !important;
     border: 4px solid var(--blue);
     box-shadow: 0 0 0 4px var(--accent), 0 10px 30px rgba(0, 0, 0, 0.15);
 }
 
-.image-frame::before {
-    display: none;
+.image-frame::before,
+.image-frame::after {
+    display: none !important;
 }
 
 .image-frame img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    object-position: center 20%;
+    width: 200px !important;
+    height: 200px !important;
+    object-fit: cover !important;
+    object-position: center 20% !important;
     display: block;
+    border-radius: 50% !important;
 }
 
 .image-placeholder {
