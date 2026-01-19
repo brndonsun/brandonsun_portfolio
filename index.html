@@ -3,22 +3,22 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Brandon Sun | Portfolio</title>
+    <title>Brandon Sun</title>
     <link rel="stylesheet" href="styles.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@300;400;500;600;700&family=Bebas+Neue&family=Roboto+Condensed:wght@300;400;700&display=swap" rel="stylesheet">
 </head>
 <body>
     <nav class="navbar">
-        <div class="nav-brand">BS</div>
+        <div class="nav-brand">Brandon Sun's Portfolio</div>
         <button class="nav-toggle" aria-label="Toggle navigation">
             <span></span>
             <span></span>
             <span></span>
         </button>
         <ul class="nav-links">
-            <li><a href="#hero">Home</a></li>
+            <li><a href="#about">Home</a></li>
             <li><a href="#about">About</a></li>
             <li><a href="#projects">Work</a></li>
             <li><a href="#gallery">Gallery</a></li>
@@ -26,28 +26,12 @@
         </ul>
     </nav>
 
-    <section id="hero" class="hero">
-        <div class="hero-content">
-            <p class="hero-intro">Hello, I'm</p>
-            <h1 class="hero-title">Brandon Sun</h1>
-            <div class="hero-line"></div>
-            <p class="hero-tagline">CS Student at UC Irvine | Full-Stack Developer</p>
-            <a href="#projects" class="btn btn-primary">Explore My Work</a>
-        </div>
-        <div class="hero-decoration">
-            <div class="circle circle-1"></div>
-            <div class="circle circle-2"></div>
-            <div class="circle circle-3"></div>
-        </div>
-    </section>
-
-    <section id="about" class="about">
+    <section id="about" class="about first-section">
         <div class="container">
-            <h2 class="section-title">About Me</h2>
             <div class="about-content">
-                <div class="about-image" style="margin-top: -20px;">
-                    <div class="image-frame" style="width: 220px; height: 220px; border-radius: 50%; overflow: hidden; border: 4px solid #0064a4; box-shadow: 0 0 0 4px #ffd700;">
-                        <img src="photos/brandon_pic.jpg" alt="Brandon Sun" style="width: 100%; height: 100%; object-fit: cover; object-position: center 15%; border-radius: 50%;">
+                <div class="about-image">
+                    <div class="image-frame" style="width: 280px; height: 280px; border-radius: 50%; overflow: hidden; border: 4px solid #0064a4; box-shadow: 0 0 0 4px #ffd700;">
+                        <img src="photos/brandon_pic.jpg" alt="Brandon Sun" style="width: 100%; height: 100%; object-fit: cover; object-position: center 70%; border-radius: 50%;">
                     </div>
                 </div>
                 <div class="about-text">
@@ -74,6 +58,10 @@
                 </div>
             </div>
         </div>
+        <a href="#projects" class="scroll-indicator">
+            <span>See My Work</span>
+            <div class="scroll-arrow"></div>
+        </a>
     </section>
 
     <section id="projects" class="projects">
@@ -92,17 +80,14 @@
                 <article class="timeline-item left">
                     <div class="timeline-dot"></div>
                     <div class="timeline-connector"></div>
-                    <div class="timeline-card">
-                        <div class="timeline-logo">
-                            <img src="https://cdn.brandfetch.io/idoG4wCxSk/w/400/h/400/theme/dark/icon.jpeg" alt="UCI OIT">
-                        </div>
+                    <div class="timeline-card expandable">
                         <div class="timeline-card-header">
                             <span class="timeline-badge work">Work</span>
                             <span class="timeline-date">Jun 2025 - Present</span>
                         </div>
                         <h3 class="timeline-title">Student Software Developer</h3>
                         <p class="timeline-org">UCI Office of Information Technology</p>
-                        <div class="timeline-preview">Full-stack development for 120+ Graduate Programs</div>
+                        <p class="timeline-preview">Full-stack development for 120+ Graduate Programs</p>
                         <div class="timeline-expanded">
                             <p class="timeline-description">
                                 Developing full-stack applications used by 120+ Graduate Programs with Java, Spring Boot, and React. Managing CI/CD pipelines with Jenkins and Git. Shipped 10+ features in Agile sprints including role-based permissions. Collaborate with business units to resolve ServiceNow tickets, reducing resolution time by 15%.
@@ -115,24 +100,21 @@
                                 <span>SQL</span>
                             </div>
                         </div>
-                    </div>
+                                            </div>
                 </article>
 
                 <article class="timeline-item right">
                     <div class="timeline-dot"></div>
                     <div class="timeline-connector"></div>
-                    <div class="timeline-card">
+                    <div class="timeline-card expandable">
                         <div class="timeline-card-header">
                             <span class="timeline-badge project">Project</span>
                             <span class="timeline-date">Jan 2025</span>
                         </div>
                         <h3 class="timeline-title">LeTherapy</h3>
                         <p class="timeline-award">1st Place - IrvineHacks 2025</p>
-                        <div class="timeline-preview">AI-powered LeBron James therapy chatbot</div>
+                        <p class="timeline-preview">AI-powered LeBron James therapy chatbot</p>
                         <div class="timeline-expanded">
-                            <div class="timeline-image">
-                                <img src="https://raw.githubusercontent.com/khanhvu0/IrvineHacks25/main/letherapy.jpg" alt="LeTherapy">
-                            </div>
                             <p class="timeline-description">
                                 Won 1st Place among 500+ participants. Built an AI-powered mental wellness chatbot featuring LeBron James delivering motivational therapy. Architected a multi-modal pipeline integrating OpenAI for text generation, PlayHT for text-to-speech, and Sync for lip-synced video responses.
                             </p>
@@ -144,7 +126,7 @@
                             </div>
                             <a href="https://github.com/khanhvu0/IrvineHacks25" class="timeline-link" target="_blank">View on GitHub</a>
                         </div>
-                    </div>
+                                            </div>
                 </article>
 
                 <!-- 2024 -->
@@ -155,17 +137,14 @@
                 <article class="timeline-item left">
                     <div class="timeline-dot"></div>
                     <div class="timeline-connector"></div>
-                    <div class="timeline-card">
-                        <div class="timeline-logo">
-                            <img src="https://cdn.brandfetch.io/idoG4wCxSk/w/400/h/400/theme/dark/icon.jpeg" alt="UCI">
-                        </div>
+                    <div class="timeline-card expandable">
                         <div class="timeline-card-header">
                             <span class="timeline-badge work">Work</span>
                             <span class="timeline-date">Sep 2024 - Jun 2025</span>
                         </div>
                         <h3 class="timeline-title">Learning Assistant</h3>
                         <p class="timeline-org">UC Irvine</p>
-                        <div class="timeline-preview">Python instruction for 150+ students</div>
+                        <p class="timeline-preview">Python instruction for 150+ students</p>
                         <div class="timeline-expanded">
                             <p class="timeline-description">
                                 Assisted professors in directing Python exercises for 150+ students across 3 quarters. Debugged code and clarified complex concepts like recursion and branching for 20+ students weekly in lab sections. Held weekly office hours to provide one-on-one tutoring and code review sessions.
@@ -176,26 +155,23 @@
                                 <span>Mentorship</span>
                             </div>
                         </div>
-                    </div>
+                                            </div>
                 </article>
 
                 <article class="timeline-item right">
                     <div class="timeline-dot"></div>
                     <div class="timeline-connector"></div>
-                    <div class="timeline-card">
-                        <div class="timeline-logo">
-                            <img src="https://cdn.brandfetch.io/idoG4wCxSk/w/400/h/400/theme/dark/icon.jpeg" alt="UCI">
-                        </div>
+                    <div class="timeline-card expandable">
                         <div class="timeline-card-header">
                             <span class="timeline-badge research">Research</span>
                             <span class="timeline-date">Mar - Oct 2024</span>
                         </div>
                         <h3 class="timeline-title">Research Assistant</h3>
                         <p class="timeline-org">UCI Physics — Prof. Whiteson</p>
-                        <div class="timeline-preview">Neural networks for particle classification</div>
+                        <p class="timeline-preview">Neural networks for particle classification</p>
                         <div class="timeline-expanded">
                             <p class="timeline-description">
-                                Optimized Python scripts for particle data processing using NumPy, reducing computation time by 35%. Built and trained PyTorch neural networks achieving 96%+ accuracy on particle classification tasks. First co-author on "Untangling New Physics in Single Resonant Top Quarks", pending publication.
+                                Optimized Python scripts for particle data processing using NumPy, reducing computation time by 35%. Built and trained PyTorch neural networks achieving 96%+ accuracy on particle classification tasks. First co-author on "Disentangling New Physics in Single Resonant Top Quarks".
                             </p>
                             <div class="timeline-tags">
                                 <span>Python</span>
@@ -203,6 +179,54 @@
                                 <span>NumPy</span>
                                 <span>ML</span>
                             </div>
+                            <a href="https://nhsjs.com/2025/disentangling-new-physics-in-single-resonant-top-quarks/" class="timeline-link" target="_blank">View Publication</a>
+                        </div>
+                                            </div>
+                </article>
+
+                <article class="timeline-item left">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-connector"></div>
+                    <div class="timeline-card expandable">
+                        <div class="timeline-card-header">
+                            <span class="timeline-badge project">Project</span>
+                            <span class="timeline-date">2024</span>
+                        </div>
+                        <h3 class="timeline-title">Tennis Form Analyzer</h3>
+                        <p class="timeline-preview">AI video analysis for tennis technique</p>
+                        <div class="timeline-expanded">
+                            <p class="timeline-description">
+                                Built an AI-powered video analysis tool that tracks arm, leg, and racket movements during tennis swings. Implemented computer vision to pause at critical swing points and provide real-time form feedback. Added side-by-side comparison with professional player videos.
+                            </p>
+                            <div class="timeline-tags">
+                                <span>Python</span>
+                                <span>OpenCV</span>
+                                <span>Flask</span>
+                            </div>
+                        </div>
+                                            </div>
+                </article>
+
+                <article class="timeline-item right">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-connector"></div>
+                    <div class="timeline-card expandable">
+                        <div class="timeline-card-header">
+                            <span class="timeline-badge project">Project</span>
+                            <span class="timeline-date">2024</span>
+                        </div>
+                        <h3 class="timeline-title">Facial Expression Classifier</h3>
+                        <p class="timeline-preview">ML model for emotion recognition</p>
+                        <div class="timeline-expanded">
+                            <p class="timeline-description">
+                                Built a machine learning model for classifying facial expressions into emotion categories. Trained on a dataset of labeled facial images using deep learning techniques for accurate emotion recognition.
+                            </p>
+                            <div class="timeline-tags">
+                                <span>Python</span>
+                                <span>TensorFlow</span>
+                                <span>ML</span>
+                            </div>
+                            <a href="https://github.com/brndonsun/cs178_facial_expression" class="timeline-link" target="_blank">View on GitHub</a>
                         </div>
                     </div>
                 </article>
@@ -210,49 +234,24 @@
                 <article class="timeline-item left">
                     <div class="timeline-dot"></div>
                     <div class="timeline-connector"></div>
-                    <div class="timeline-card">
-                        <div class="timeline-card-header">
-                            <span class="timeline-badge project">Project</span>
-                            <span class="timeline-date">2024</span>
-                        </div>
-                        <h3 class="timeline-title">Tennis Form Analyzer</h3>
-                        <div class="timeline-preview">AI video analysis for tennis technique</div>
-                        <div class="timeline-expanded">
-                            <p class="timeline-description">
-                                Built an AI-powered video analysis tool that tracks arm, leg, and racket movements during tennis swings. Implemented computer vision to pause at critical swing points and provide real-time form feedback. Added side-by-side comparison with professional player videos to highlight technique differences.
-                            </p>
-                            <div class="timeline-tags">
-                                <span>Python</span>
-                                <span>OpenCV</span>
-                                <span>Flask</span>
-                                <span>Computer Vision</span>
-                            </div>
-                        </div>
-                    </div>
-                </article>
-
-                <article class="timeline-item right">
-                    <div class="timeline-dot"></div>
-                    <div class="timeline-connector"></div>
-                    <div class="timeline-card">
+                    <div class="timeline-card expandable">
                         <div class="timeline-card-header">
                             <span class="timeline-badge project">Project</span>
                             <span class="timeline-date">2024</span>
                         </div>
                         <h3 class="timeline-title">Earwormify</h3>
-                        <div class="timeline-preview">Spotify analytics and recommendations</div>
+                        <p class="timeline-preview">Spotify analytics and recommendations</p>
                         <div class="timeline-expanded">
                             <p class="timeline-description">
-                                Built a Flask web app integrating the Spotify API to analyze and categorize 10,000+ songs by genre, key, and artist. Implemented OAuth 2.0 authentication for secure user data access and personalized music recommendations based on listening habits.
+                                Built a Flask web app integrating the Spotify API to analyze and categorize 10,000+ songs by genre, key, and artist. Implemented OAuth 2.0 authentication for secure user data access and personalized music recommendations.
                             </p>
                             <div class="timeline-tags">
                                 <span>Python</span>
                                 <span>Flask</span>
                                 <span>Spotify API</span>
-                                <span>OAuth 2.0</span>
                             </div>
                         </div>
-                    </div>
+                                            </div>
                 </article>
 
             </div>
@@ -260,51 +259,61 @@
     </section>
 
     <section id="gallery" class="gallery">
-        <div class="container">
+        <div class="gallery-header">
             <h2 class="section-title">Life in Frames</h2>
             <p class="section-subtitle">Moments worth remembering</p>
+        </div>
 
-            <div class="polaroid-wall">
-                <div class="polaroid" style="--rotation: -4deg; --delay: 0s;">
-                    <div class="polaroid-image">
-                        <img src="photos/photo1.jpg" alt="Memory 1">
-                    </div>
-                    <div class="polaroid-caption">Caption here</div>
+        <div class="scroll-gallery">
+            <div class="scroll-track">
+                <div class="gallery-item">
+                    <img src="photos/photo1.jpg" alt="Memory 1">
+                    <div class="gallery-caption">Caption here</div>
                 </div>
-
-                <div class="polaroid" style="--rotation: 3deg; --delay: 0.1s;">
-                    <div class="polaroid-image">
-                        <img src="photos/photo2.jpg" alt="Memory 2">
-                    </div>
-                    <div class="polaroid-caption">Caption here</div>
+                <div class="gallery-item">
+                    <img src="photos/photo2.jpg" alt="Memory 2">
+                    <div class="gallery-caption">Caption here</div>
                 </div>
-
-                <div class="polaroid" style="--rotation: -2deg; --delay: 0.2s;">
-                    <div class="polaroid-image">
-                        <img src="photos/photo3.jpg" alt="Memory 3">
-                    </div>
-                    <div class="polaroid-caption">Caption here</div>
+                <div class="gallery-item">
+                    <img src="photos/photo3.jpg" alt="Memory 3">
+                    <div class="gallery-caption">Caption here</div>
                 </div>
-
-                <div class="polaroid" style="--rotation: 5deg; --delay: 0.3s;">
-                    <div class="polaroid-image">
-                        <img src="photos/photo4.jpg" alt="Memory 4">
-                    </div>
-                    <div class="polaroid-caption">Caption here</div>
+                <div class="gallery-item">
+                    <img src="photos/photo4.jpg" alt="Memory 4">
+                    <div class="gallery-caption">Caption here</div>
                 </div>
-
-                <div class="polaroid" style="--rotation: -3deg; --delay: 0.4s;">
-                    <div class="polaroid-image">
-                        <img src="photos/photo5.jpg" alt="Memory 5">
-                    </div>
-                    <div class="polaroid-caption">Caption here</div>
+                <div class="gallery-item">
+                    <img src="photos/photo5.jpg" alt="Memory 5">
+                    <div class="gallery-caption">Caption here</div>
                 </div>
-
-                <div class="polaroid" style="--rotation: 2deg; --delay: 0.5s;">
-                    <div class="polaroid-image">
-                        <img src="photos/photo6.jpg" alt="Memory 6">
-                    </div>
-                    <div class="polaroid-caption">Caption here</div>
+                <div class="gallery-item">
+                    <img src="photos/photo6.jpg" alt="Memory 6">
+                    <div class="gallery-caption">Caption here</div>
+                </div>
+                <!-- Duplicate for seamless loop -->
+                <div class="gallery-item">
+                    <img src="photos/photo1.jpg" alt="Memory 1">
+                    <div class="gallery-caption">Caption here</div>
+                </div>
+                <div class="gallery-item">
+                    <img src="photos/photo2.jpg" alt="Memory 2">
+                    <div class="gallery-caption">Caption here</div>
+                </div>
+                <div class="gallery-item">
+                    <img src="photos/photo3.jpg" alt="Memory 3">
+                    <div class="gallery-caption">Caption here</div>
+                </div>
+                <div class="gallery-item">
+                    <img src="photos/photo4.jpg" alt="Memory 4">
+                    <div class="gallery-caption">Caption here</div>
+                </div>
+                <div class="gallery-item">
+                    <img src="photos/photo5.jpg" alt="Memory 5">
+                    <div class="gallery-caption">Caption here</div>
+                </div>
+                <div class="gallery-item">
+                    <img src="photos/photo6.jpg" alt="Memory 6">
+                    <div class="gallery-caption">Caption here</div>
                 </div>
             </div>
         </div>
