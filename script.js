@@ -124,3 +124,31 @@ window.addEventListener('scroll', () => {
         }
     });
 });
+
+// Gallery video auto-play when visible
+const galleryVideos = document.querySelectorAll('.gallery-video');
+
+const videoObserver = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+        const video = entry.target;
+        if (entry.isIntersecting) {
+            video.play().catch(() => {});
+        } else {
+            video.pause();
+        }
+    });
+}, { threshold: 0.3 });
+
+galleryVideos.forEach(video => {
+    videoObserver.observe(video);
+
+    // Fallback: hover to play/pause
+    video.parentElement.addEventListener('mouseenter', () => {
+        video.play().catch(() => {});
+    });
+    video.parentElement.addEventListener('mouseleave', () => {
+        if (!video.closest('.gallery-item').classList.contains('in-view')) {
+            video.pause();
+        }
+    });
+});
